@@ -12,6 +12,11 @@ public class Todo{
 		this.title=title;
 		this.userId= userId;
 	}
+
+	public Todo() {
+
+	}
+
 	public void setId(int id){
 		this.id = id;
 	}
@@ -54,4 +59,10 @@ public class Todo{
 			",userId = '" + userId + '\'' + 
 			"}";
 		}
+
+	public void delete(long todoId) {
+		Todo todo= new Todo();
+		todo.delete(todoId);
+
+	}
 }
